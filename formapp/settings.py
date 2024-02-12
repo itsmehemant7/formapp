@@ -58,7 +58,7 @@ ROOT_URLCONF = 'formapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'frontend/formapp/out/')],
+        'DIRS': [os.path.join(BASE_DIR,'out')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     STATIC_DIR,
-    os.path.join(BASE_DIR, 'frontend/formapp/out/_next/static')
+    os.path.join(BASE_DIR, 'out/_next/static')
 ]
 
 
